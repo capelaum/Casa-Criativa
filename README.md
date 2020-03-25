@@ -1,2 +1,3 @@
 # WorkShop-Dev-RocketSeat
-Projeto Casa Criativa - Site de atividades para se fazer na crise
+Ep01 - Fazendo a base HTML
+EP02 - Fazendo Front-end com CSS
