@@ -1,3 +1,4 @@
 # WorkShop-Dev-RocketSeat
-Ep01 - Fazendo a base HTML<br />
-EP02 - Fazendo Front-end com CSS
+Ep01 - Base HTML<br />
+EP02 - Página Inicial e Adicionar Ideias<br />
+EP03 - Página Ideias e Rotas<br />
