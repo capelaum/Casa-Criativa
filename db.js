@@ -16,26 +16,27 @@ db.serialize(function() {
         );
         `)
         
-        // INSERIR
-        const query = 
-        ` 
-        INSERT INTO ideias (
-            image,
-            title,
-            category,
-            description,
-            link
-            ) VALUES (?, ?, ?, ?, ?);
-            `
-            
-        const values = 
-        [
-            "https://image.flaticon.com/icons/svg/2729/2729007.svg",
-            "Programação",
-            "Estudo",
-            "Lorem ipsum dolor sit, amet consectetur adipisicing elit",
-            "https://rocketseat.com.br"
-        ]
+    // INSERIR
+    const query = 
+    ` 
+    INSERT INTO ideias (
+        image,
+        title,
+        category,
+        description,
+        link
+        ) VALUES (?, ?, ?, ?, ?);
+        `
+        
+    const values = 
+    [
+        "https://image.flaticon.com/icons/svg/2729/2729007.svg",
+        "Programação",
+        "Estudo",
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit",
+        "https://rocketseat.com.br"
+    ]
+
         // db.run(query, values, function(error) {
             //     if(error) return console.log(error)
         
@@ -50,7 +51,7 @@ db.serialize(function() {
     // })
 
     // DELETAR 
-    // db.run(`DELETE FROM ideias WHERE id = ?`, [2], function(error) {
+    // db.run(`DELETE FROM ideias WHERE id = ?`, [id], function(error, rows) {
     //     if(error) return console.log(error)
 
     //     console.log("DELETEI IDEIA:\n", this)

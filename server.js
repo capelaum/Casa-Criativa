@@ -24,7 +24,7 @@ const ideias = [
         title: "Meditação",
         category: "Mindset",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit",
-        url: "https://rocketseat.com.br"
+        url: "https://www.headspace.com/pt"
     },
     {
         img: "https://image.flaticon.com/icons/svg/2729/2729069.svg",
@@ -61,7 +61,7 @@ nunjucks.configure("views", {
     express: server,   
 })
 
-// cria rota e captura pedido do cliente para responder
+// cria rota e captura pedido do cliente para responder - renderiza a pagina principal
 server.get("/", function(req, res) {
     
     db.all(`SELECT * FROM ideias`, function(error, rows) {
@@ -85,6 +85,7 @@ server.get("/", function(req, res) {
     })
 })
 
+// renderiza a pagina de ideias
 server.get("/ideias", function(req, res) {
 
     db.all(`SELECT * FROM ideias`, function(error, rows) {
@@ -133,6 +134,23 @@ server.post("/", function(req, res) {
 
     //console.log(req.body)
 })
+
+server.delete("/", function(req, res) {
+
+    const title = req.body.title;
+    
+
+    db.run(`DELETE FROM ideias WHERE id = ?`, [id], function(error, rows) {
+        if(error) {
+            console.log(error)
+            return res.send("Erro no banco de dados!")
+        }
+
+        console.log("DELETEI IDEIA:\n", this)
+    })
+    return res.redirect("/ideias")
+})
+
 
 // servidor ligado na porta 3000
 server.listen(3000)

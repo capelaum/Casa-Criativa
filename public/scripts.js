@@ -17,7 +17,7 @@ function onOff() {
         .toggle("addScroll")
 }
 
-// Validação de formulario
+// Validação de formulario de Nova Ideias 
 function checkFields(event) {
 
     const valuesCheck = [
@@ -28,6 +28,7 @@ function checkFields(event) {
         "link",
     ]
 
+    // checa se existe um campo vazio - string vazia
     const isEmpty = valuesCheck.find(function(value) {
 
         const checkString = typeof event.target[value].value === "string"
