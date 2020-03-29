@@ -33,7 +33,6 @@ body.hideScroll {
     overflow: hidden;
 }
 
-
 a {
     color: #ff5E84;
     font-weight: bold;
@@ -81,7 +80,7 @@ p, .description {
     width: 80%;
     max-width: 980px;
 
-    margin: 40px auto;
+    margin: 200px auto;
     
     display: flex;
 }
@@ -147,7 +146,7 @@ footer a {
     border-radius: 8px;
 
     padding: 32px;
-    margin-bottom: 32px;
+    margin-bottom: 12px;
 }
 
 .idea img {
@@ -311,10 +310,12 @@ form button:hover {
 /* IDEIA.HTML */
 
 #page-ideas #container {
+    margin-top: 20px;
     display: block;
 }
 
 #page-ideas header{
+
     display: flex;
     justify-content: space-between;
 }

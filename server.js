@@ -29,7 +29,21 @@ const ideias = [
         title: "Yoga",
         category: "Saúde",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit",
-        url: "https://rpcketseat.com.br"
+        url: "https://rocketseat.com.br"
+    },
+    {
+        img: "https://image.flaticon.com/icons/svg/2729/2729038.svg",
+        title: "Pintura",
+        category: "Criatividade",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit",
+        url: "https://rocketseat.com.br"
+    },
+    {
+        img: "https://image.flaticon.com/icons/svg/2729/2729021.svg",
+        title: "Video Games",
+        category: "Lazer",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit",
+        url: "https://store.steampowered.com/?l=portuguese"
     },
 ]
 
@@ -39,19 +53,32 @@ server.use(express.static("public"))
 // config do nunjucks
 const nunjucks = require("nunjucks")
 nunjucks.configure("views", {
-    express: server, 
-    noCache: true,  
+    express: server,   
 })
 
 // cria rota e captura pedido do cliente para responder
 server.get("/", function(req, res) {
-
     
-    return res.render('index.html', { ideias })
+    // tira a referencia - pega uma cópia
+    const reversedIdeias = [...ideias].reverse()
+
+    // New colection
+    let listIdeias = []    
+
+    for(let ideia of reversedIdeias) {
+        if (listIdeias.length < 2) {
+            listIdeias.push(ideia)
+        }
+    }
+
+    return res.render('index.html', { ideias: listIdeias })
 })
 
 server.get("/ideias", function(req, res) {
-    return res.render('ideias.html')
+
+    const reversedIdeias = [...ideias].reverse()
+    
+    return res.render('ideias.html', { ideias: reversedIdeias })
 })
 
 // servidor ligado na porta 3000
