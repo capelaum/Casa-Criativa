@@ -1,7 +1,6 @@
 {% for ideia in ideias %}
     <div class="idea">
-        
-        <img src="{{ ideia.img }}" alt="Icone {{ ideia.title }}">
+        <img src="{{ ideia.image }}" alt="Icone {{ ideia.title }}">
 
         <div class="content">
             <h3>{{ ideia.title }}</h3>
@@ -9,7 +8,7 @@
             <div class="description">
                 {{ ideia.description }}
             </div>
-            <a href="{{ ideia.url }}" target="_blank" >Ir para Ideia</a>
+            <a href="{{ ideia.link }}" target="_blank" >Ir para Ideia</a>
         </div>
     </div>
 {% endfor %}

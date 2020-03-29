@@ -1,6 +1,8 @@
-const express = require('express')      // express para criar e configurar o meu servidor
+const express = require('express')      // express para criar e configurar meu servidor
 const server = express();
 // console.log(server)
+
+const db = require("./db")
 
 const ideias = [
     {
@@ -47,8 +49,11 @@ const ideias = [
     },
 ]
 
-// configurar arquivos estáticos
+// configurar arquivos estáticos pelo express
 server.use(express.static("public"))
+
+// habilitar uso do request body
+server.use(express.urlencoded({ extended: true }))
 
 // config do nunjucks
 const nunjucks = require("nunjucks")
@@ -59,26 +64,74 @@ nunjucks.configure("views", {
 // cria rota e captura pedido do cliente para responder
 server.get("/", function(req, res) {
     
-    // tira a referencia - pega uma cópia
-    const reversedIdeias = [...ideias].reverse()
-
-    // New colection
-    let listIdeias = []    
-
-    for(let ideia of reversedIdeias) {
-        if (listIdeias.length < 2) {
-            listIdeias.push(ideia)
+    db.all(`SELECT * FROM ideias`, function(error, rows) {
+        if(error) {
+            console.log(error)
+            return res.send("Erro no banco de dados!")
         }
-    }
 
-    return res.render('index.html', { ideias: listIdeias })
+        // tira a referencia - pega uma cópia
+        const reversedIdeias = [...rows].reverse()
+    
+        // New colection
+        let listIdeias = []    
+        for(let ideia of reversedIdeias) {
+            if (listIdeias.length < 2) {
+                listIdeias.push(ideia)
+            }
+        }
+
+        return res.render('index.html', { ideias: listIdeias })
+    })
 })
 
 server.get("/ideias", function(req, res) {
 
-    const reversedIdeias = [...ideias].reverse()
+    db.all(`SELECT * FROM ideias`, function(error, rows) {
+        if(error) {
+            console.log(error)
+            return res.send("Erro no banco de dados!")
+        }
+
+        const reversedIdeias = [...rows].reverse()
+        return res.render('ideias.html', { ideias: reversedIdeias })
+    })
+
+})
+
+// insere no db os dados do formulario
+server.post("/", function(req, res) {
+    const query = 
+        ` 
+        INSERT INTO ideias (
+            image,
+            title,
+            category,
+            description,
+            link
+            ) VALUES (?, ?, ?, ?, ?);
+            `
+            
+    const values = 
+    [
+        req.body.image,
+        req.body.title,
+        req.body.category,
+        req.body.description,
+        req.body.link,
+    ]
+
+    db.run(query, values, function(error) {
+        if(error) {
+            console.log(error)
+            return res.send("Erro no banco de dados!")
+        }
+        
+        return res.redirect("/ideias")
     
-    return res.render('ideias.html', { ideias: reversedIdeias })
+    })
+
+    //console.log(req.body)
 })
 
 // servidor ligado na porta 3000

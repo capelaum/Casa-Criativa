@@ -16,3 +16,30 @@ function onOff() {
         .classList
         .toggle("addScroll")
 }
+
+// Validação de formulario
+function checkFields(event) {
+
+    const valuesCheck = [
+        "title",
+        "category",
+        "image",
+        "description",
+        "link",
+    ]
+
+    const isEmpty = valuesCheck.find(function(value) {
+
+        const checkString = typeof event.target[value].value === "string"
+        const checkEmpty = !event.target[value].value.trim()
+
+        if (checkString && checkEmpty) {
+            return true
+        }
+    })
+
+    if(isEmpty) {
+        event.preventDefault()
+        alert("Obrigatório preencher todos os campos!")
+    }
+}
