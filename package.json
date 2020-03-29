@@ -1,0 +1,24 @@
+{
+  "name": "WorkShop-Dev-RocketSeat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capelaum/WorkShop-Dev-RocketSeat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/capelaum/WorkShop-Dev-RocketSeat/issues"
+  },
+  "homepage": "https://github.com/capelaum/WorkShop-Dev-RocketSeat#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
