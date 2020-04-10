@@ -31,14 +31,14 @@ const ideias = [
         title: "Yoga",
         category: "Saúde",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit",
-        url: "https://rocketseat.com.br"
+        url: "https://www.headspace.com/pt"
     },
     {
         img: "https://image.flaticon.com/icons/svg/2729/2729038.svg",
         title: "Pintura",
         category: "Criatividade",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit",
-        url: "https://rocketseat.com.br"
+        url: "https://www.headspace.com/pt"
     },
     {
         img: "https://image.flaticon.com/icons/svg/2729/2729021.svg",
