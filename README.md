@@ -7,6 +7,7 @@ Casa Criativa: Ideias para se fazer na crise - WorkShop Dev
     <img src="Casa_Criativa_Logo.png" alt="Casa Criativa Logo image"/>
   </a>
 </h1>
+
 ## :dart: The goal
 
 The main goal is simply learn more about [Node.js][1], [React][2], JavaScript and also using Express, Nunjuncks, knex and 
