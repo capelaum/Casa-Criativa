@@ -14,9 +14,7 @@ The main goal is simply learn more about [Node.js][1], [React][2], JavaScript an
 
 <br>
 
-## :bow: The learner
-
-Built with by [Capelaum][3]
+## :bow: The learner: [Capelaum][3]
 
 <br>
 
