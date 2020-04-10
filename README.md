@@ -10,7 +10,7 @@ Casa Criativa: Ideias para se fazer na crise - WorkShop Dev
 
 ## :dart: The goal
 
-The main goal is simply learn more about [Node.js][1], [React][2], JavaScript and also using Express, Nunjuncks, knex and 
+The main goal is simply learn more about [Node.js][1], [React][2], JavaScript and also using Express, Nunjuncks and SQLite.
 
 <br>
 
