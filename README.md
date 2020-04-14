@@ -4,7 +4,7 @@ Casa Criativa: Ideias para se fazer na crise - WorkShop Dev
 
 <h1 align="center">
   <a href="#" title="Casa Criativa">
-    <img src="Casa_Criativa_Logo.png" alt="Casa Criativa Logo image"/>
+    <img src="public/WS Logo.png" alt="Casa Criativa Logo"/>
   </a>
 </h1>
 
