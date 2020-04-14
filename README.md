@@ -1,8 +1,8 @@
 # Casa-Criativa-Website
-
-<b>Ideias para se fazer na crise </b> <br>
-RocketSeat - WorkShop Dev 
-
+<h1 align="center">
+  <b>Ideias para se fazer na quarentena! </b> <br>
+  RocketSeat - WorkShop Dev 
+</h1>
 <h1 align="center">
   <a href="#" title="Casa Criativa">
     <img src="public/WS Logo.png" alt="Casa Criativa Logo"/>
