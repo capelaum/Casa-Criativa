@@ -5,9 +5,8 @@
 </h1>
 
 <h1 align="center" style="color: #ff5E84;">
-  <b># Casa Criativa Website </b> <br>
   <b>Ideias para se fazer em casa na quarentena  </b> <br>
-  RocketSeat - WorkShop Dev 
+  <h3>RocketSeat - WorkShop Dev </h3>
 </h1>
 
 ### :dart: The goal
