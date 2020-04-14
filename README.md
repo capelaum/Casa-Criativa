@@ -1,6 +1,7 @@
 # Casa-Criativa-Website
 
-Casa Criativa: Ideias para se fazer na crise - WorkShop Dev 
+<b>Ideias para se fazer na crise </b> <br>
+RocketSeat - WorkShop Dev 
 
 <h1 align="center">
   <a href="#" title="Casa Criativa">
