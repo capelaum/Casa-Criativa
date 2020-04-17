@@ -4,6 +4,7 @@ const server = express();
 
 const db = require("./db")
 
+// Array de ideias
 const ideias = [
     {
         img: "https://image.flaticon.com/icons/svg/2729/2729007.svg",
@@ -138,7 +139,6 @@ server.post("/", function(req, res) {
 server.delete("/", function(req, res) {
 
     const title = req.body.title;
-    
 
     db.run(`DELETE FROM ideias WHERE id = ?`, [id], function(error, rows) {
         if(error) {
@@ -150,7 +150,6 @@ server.delete("/", function(req, res) {
     })
     return res.redirect("/ideias")
 })
-
 
 // servidor ligado na porta 3000
 server.listen(3000)
