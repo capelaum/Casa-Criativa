@@ -13,7 +13,7 @@
 
 The main goal is simply learn more about [Node.js][1], [React][2], JavaScript and also using Express, Nunjuncks and SQLite.
 
-### :bow: By[Capelaum][3]
+### :bow: By [Capelaum][3]
 
 <br>
 
