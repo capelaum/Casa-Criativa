@@ -6,16 +6,14 @@
 
 <h1 align="center">
   <b>Ideias para se fazer em casa na quarentena  </b> <br>
-  <h3>RocketSeat - WorkShop Dev </h3>
+  <h3 align="center">RocketSeat - WorkShop Dev </h3>
 </h1>
 
 ### :dart: The goal
 
 The main goal is simply learn more about [Node.js][1], [React][2], JavaScript and also using Express, Nunjuncks and SQLite.
 
-<br>
-
-### :bow: The learner: [Capelaum][3]
+### :bow: By[Capelaum][3]
 
 <br>
 
