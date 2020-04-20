@@ -1,8 +1,10 @@
 <h1 align="center">
-    <a href="#" title="Casa Criativa"><img src="public/WS Logo.png" alt="Casa Criativa Logo"/></a>
+    <a href="#" title="Casa Criativa">
+        <img src="public/WS Logo.png" alt="Casa Criativa Logo"/>
+    </a>
 </h1>
 
-<h1 align="center" style="color: #ff5E84;">
+<h1 align="center">
   <b>Ideias para se fazer em casa na quarentena  </b> <br>
   <h3>RocketSeat - WorkShop Dev </h3>
 </h1>
