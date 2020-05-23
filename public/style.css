@@ -151,14 +151,14 @@ footer a {
 #modal {
     background: #ff5E84;
 
-    position: fixed;     /* trocar pra fixed talvez */
+    position: fixed; 
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
 
     display: flex;
-    align-items: center; /**/
+    align-items: center;
     justify-content: center;
 
     transition: 400ms;
@@ -166,6 +166,11 @@ footer a {
 
 #modal.addScroll {
     overflow: auto;
+}
+
+#modal.hide {
+    opacity: 0.5;
+    visibility: hidden;
 }
 
 #modal .content {
@@ -272,11 +277,6 @@ form button:hover {
     color: white;
 
     text-decoration: none;
-}
-
-#modal.hide {
-    opacity: 0.5;
-    visibility: hidden;
 }
 
 /* IDEIA.HTML */
