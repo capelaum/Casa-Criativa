@@ -4,19 +4,18 @@
     </a>
 </h1>
 
-<h1 align="center">
-  <b>Ideias para se fazer em casa na quarentena  </b> <br>
-  <h3 align="center">RocketSeat - WorkShop Dev </h3>
-</h1>
+<h2 align="center">
+    <a href="#"><img src="public/stay_home.png" alt="stay home"/></a>
+    <b>Ideias para se fazer em casa na quarentena</b> <br> 
+    RocketSeat - WorkShop Dev
+</h2>
 
-### :dart: The goal
-
-The main goal is simply learn more about [Node.js][1], [React][2], JavaScript and also using Express, Nunjuncks and SQLite.
-
-### :bow: By [Capelaum][3]
-
+:dart: The main goal is to learn more about [Node.js][1], [React][2], JavaScript and also use Express, Nunjuncks and SQLite.
 <br>
-
+Icon made by 
+<a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from 
+<a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    
 [1]: https://nodejs.org/en/
 [2]: https://reactjs.org/
-[3]: https://github.com/capelaum
+
