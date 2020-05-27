@@ -5,14 +5,12 @@
 </h1>
 
 <h2 align="center">
-    <img src="public/stay_home.png" alt="stay_home"/>
+    <a href="#"><img src="public/stay_home.png" alt="stay home"/></a>
     <b>Ideias para se fazer em casa na quarentena</b> <br> 
     RocketSeat - WorkShop Dev
 </h2>
 
-### :dart: 
-
-The main goal is to learn more about [Node.js][1], [React][2], JavaScript and also use Express, Nunjuncks and SQLite.
+:dart: The main goal is to learn more about [Node.js][1], [React][2], JavaScript and also use Express, Nunjuncks and SQLite.
 <br>
 Icon made by 
 <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from 
