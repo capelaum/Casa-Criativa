@@ -2,7 +2,7 @@
 
 <h2 align="center">
     <b>Ideias para se fazer em casa na quarentena</b><br> 
-    RocketSeat - WorkShop Dev <br> 
+    RocketSeat - WorkShop Dev <br> <br> 
     <img src="public/stay_home.svg" alt="stay home" width="100px"/>
 </h2>
 
