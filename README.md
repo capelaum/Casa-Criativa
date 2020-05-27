@@ -1,11 +1,7 @@
-<h1 align="center">
-    <a href="#" title="Casa Criativa">
-        <img src="public/WS Logo.png" alt="Casa Criativa Logo"/>
-    </a>
-</h1>
+<h1 align="center"><img src="public/WS Logo.png" alt="Casa Criativa Logo"/></h1>
 
 <h2 align="center">
-    <a href="#"><img src="public/stay_home.png" alt="stay home"/></a>
+    <img src="public/stay_home.png" alt="stay home"/></a>
     <b>Ideias para se fazer em casa na quarentena</b> <br> 
     RocketSeat - WorkShop Dev
 </h2>
