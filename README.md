@@ -5,12 +5,12 @@
 </h1>
 
 <h2 align="center">
-    <img src="public/stay_home.png" alt="stayhome"/>
+    <img src="public/stay_home.png" alt="stay_home"/>
     <b>Ideias para se fazer em casa na quarentena</b> <br> 
-    <h3 align="center">RocketSeat - WorkShop Dev </h3>
+    RocketSeat - WorkShop Dev
 </h2>
 
-### :dart: The goal
+### :dart: 
 
 The main goal is to learn more about [Node.js][1], [React][2], JavaScript and also use Express, Nunjuncks and SQLite.
 <br>
