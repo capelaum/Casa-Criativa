@@ -1,9 +1,9 @@
 <h1 align="center"><img src="public/WS Logo.png" alt="Casa Criativa Logo"/></h1>
 
 <h2 align="center">
-    <b>Ideias para se fazer em casa na quarentena</b> <br> 
-    RocketSeat - WorkShop Dev
-    <img src="public/stay_home.svg" alt="stay home" width="100px"/><br>
+    <b>Ideias para se fazer em casa na quarentena</b><br> 
+    RocketSeat - WorkShop Dev <br> 
+    <img src="public/stay_home.svg" alt="stay home" width="100px"/>
 </h2>
 
 :dart: The main goal is to learn more about [Node.js][1], [React][2], JavaScript and also use Express, Nunjuncks and SQLite.
