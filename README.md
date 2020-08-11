@@ -19,29 +19,25 @@ npm run dev
 ```
 Aplicação roda na porta [3000](https://localhost:3000)
 
-### Página principal
-
 <div align="center">
+    <h2>Página principal</h2>
     <img src="public/images/main_page.png" width="500"/>
 </div>
 
-### Modal
-
 <div align="center">
+    <h2>Modal</h2>
     <img src="public/images/modal.png" width="400"/>
 </div>
 
-### Página de ideias
-
 <div align="center">
+    <h2>Página de ideias</h2>
     <img src="public/images/ideias_page.png" width="500"/>
 </div>
 
 
-#### Instrutor [Maik Brito](https://app.rocketseat.com.br/me/maykbrito)
+## Instrutor [Maik Brito](https://app.rocketseat.com.br/me/maykbrito)
 
 Realizado na [WorkShop Dev](https://www.youtube.com/watch?v=cprMYC8PCVY&list=PL85ITvJ7FLohGTWaE_p0J6B-TLmQbN4ka) - [RocketSeat](https://rocketseat.com.br)
-
 Feito com [Node.js][1], Express, Nunjuncks e SQLite.
 
 <div align="center">
