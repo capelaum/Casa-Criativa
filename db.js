@@ -4,29 +4,27 @@ const db = new sqlite3.Database('./project.db')
 db.serialize(function() {
 
     
-    // CRIAR A TABELA
+    //* CRIAR A TABELA
     db.run(`
-    CREATE TABLE IF NOT EXISTS ideias(
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        image TEXT,
-        title TEXT,
-        category TEXT,
-        description TEXT,
-        link TEXT
-        );
-        `)
+        CREATE TABLE IF NOT EXISTS ideias(
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            image TEXT,
+            title TEXT,
+            category TEXT,
+            description TEXT,
+            link TEXT
+            );
+    `)
         
-    // INSERIR
-    const query = 
-    ` 
-    INSERT INTO ideias (
-        image,
-        title,
-        category,
-        description,
-        link
-        ) VALUES (?, ?, ?, ?, ?);
-        `
+    //* INSERIR
+    const query = ` 
+        INSERT INTO ideias (
+            image,
+            title,
+            category,
+            description,
+            link
+            ) VALUES (?, ?, ?, ?, ?);`
         
     const values = 
     [
@@ -37,25 +35,29 @@ db.serialize(function() {
         "https://rocketseat.com.br"
     ]
 
-        // db.run(query, values, function(error) {
-            //     if(error) return console.log(error)
+    //* INSERE
+    /* db.run(query, values, function(error) {
+        if(error) 
+            return console.log(error)
         
-    //     console.log("INSERI IDEIA:\n",this)
-    //      })
+        console.log("INSERI IDEIA:\n",this)
+    }); */
 
-    // CONSULTAR 
-    // db.all(`SELECT * FROM ideias`, function(error, rows) {
-    //     if(error) return console.log(error)
+    //* CONSULTAR 
+    /* db.all(`SELECT * FROM ideias`, function(error, rows) {
+        if(error) 
+            return console.log(error)
 
-    //     console.log("TABELA:\n",rows)
-    // })
+        console.log("TABELA:\n",rows)
+    }); */
 
-    // DELETAR 
-    // db.run(`DELETE FROM ideias WHERE id = ?`, [id], function(error, rows) {
-    //     if(error) return console.log(error)
+    //* DELETAR 
+    /* db.run(`DELETE FROM ideias WHERE id = ?`, [id], function(error, rows) {
+        if(error) 
+            return console.log(error)
 
-    //     console.log("DELETEI IDEIA:\n", this)
-    // })
+        console.log("DELETEI IDEIA:\n", this)
+    }); */
 
 })
 
