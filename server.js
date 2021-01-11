@@ -2,6 +2,8 @@ const express = require('express')      // express para criar e configurar meu s
 const server = express();
 // console.log(server)
 
+var publicDir = require('path').join(__dirname,'/public');
+server.use(express.static(publicDir));
 const db = require("./db")
 
 // Array de ideias
@@ -128,7 +130,6 @@ server.post("/", function(req, res) {
         return res.redirect("/ideias")
     
     })
-
     //console.log(req.body)
 })
 
@@ -142,6 +143,7 @@ server.delete("/", function(req, res) {
         }
         console.log("DELETEI IDEIA:\n", this)
     })
+
     return res.redirect("/ideias")
 })
 
