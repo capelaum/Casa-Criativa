@@ -3,9 +3,7 @@
 body {
     background: rgb(207, 204, 207);
     color: rgb(57, 61, 66);
-
     font-family: 'Montserrat', sans-serif;
-
     margin: 0;
 }
 
@@ -55,10 +53,10 @@ p, .description {
 }
 
 #container {
-    width: 80%;
-    max-width: 980px;
-
-    margin: 200px auto;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
     
     display: flex;
 }

@@ -64,13 +64,11 @@ nunjucks.configure("views", {
 
 // cria rota e captura pedido do cliente para responder - renderiza a pagina principal
 server.get("/", function(req, res) {
-    
     db.all(`SELECT * FROM ideias`, function(error, rows) {
         if(error) {
             console.log(error)
             return res.send("Erro no banco de dados!")
         }
-
         // tira a referencia - pega uma cópia
         const reversedIdeias = [...rows].reverse()
     
@@ -81,14 +79,12 @@ server.get("/", function(req, res) {
                 listIdeias.push(ideia)
             }
         }
-
         return res.render('index.html', { ideias: listIdeias })
     })
 })
 
 // renderiza a pagina de ideias
 server.get("/ideias", function(req, res) {
-
     db.all(`SELECT * FROM ideias`, function(error, rows) {
         if(error) {
             console.log(error)
@@ -137,7 +133,6 @@ server.post("/", function(req, res) {
 })
 
 server.delete("/", function(req, res) {
-
     const title = req.body.title;
 
     db.run(`DELETE FROM ideias WHERE id = ?`, [id], function(error, rows) {
@@ -145,7 +140,6 @@ server.delete("/", function(req, res) {
             console.log(error)
             return res.send("Erro no banco de dados!")
         }
-
         console.log("DELETEI IDEIA:\n", this)
     })
     return res.redirect("/ideias")
