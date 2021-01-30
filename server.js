@@ -148,4 +148,4 @@ server.delete("/", function(req, res) {
 })
 
 // servidor ligado na porta 3000
-server.listen(3000)
+server.listen($PORT)
