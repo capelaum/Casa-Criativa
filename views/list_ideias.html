@@ -1,7 +1,7 @@
 {% for ideia in ideias %}
-    <div class="idea">
+    <div class="idea" id="{{ ideia.id }}">
         <img src="{{ ideia.image }}" alt="Icone {{ ideia.title }}">
-
+        <a href="/delete?id={{ ideia.id }}" class="delete-btn">X</a>
         <div class="content">
             <h3>{{ ideia.title }}</h3>
             <p>{{ ideia.category }}</p>

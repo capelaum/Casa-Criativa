@@ -2,57 +2,9 @@ const express = require('express')      // express para criar e configurar meu s
 const server = express();
 // console.log(server)
 
-let port = process.env.PORT || 3000;
-
 var publicDir = require('path').join(__dirname,'/public');
 server.use(express.static(publicDir));
 const db = require("./db")
-
-// Array de ideias
-const ideias = [
-    {
-        img: "https://image.flaticon.com/icons/svg/2729/2729007.svg",
-        title: "Programação",
-        category: "Estudo",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit",
-        url: "https://rocketseat.com.br"
-    },
-    {
-        img: "https://image.flaticon.com/icons/svg/2729/2729005.svg",
-        title: "Exercícios",
-        category: "Saúde",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit",
-        url: "https://dragonpharmabrasil.com/"
-    },
-    {
-        img: "https://image.flaticon.com/icons/svg/2729/2729027.svg",
-        title: "Meditação",
-        category: "Mindset",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit",
-        url: "https://www.headspace.com/pt"
-    },
-    {
-        img: "https://image.flaticon.com/icons/svg/2729/2729069.svg",
-        title: "Yoga",
-        category: "Saúde",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit",
-        url: "https://www.headspace.com/pt"
-    },
-    {
-        img: "https://image.flaticon.com/icons/svg/2729/2729038.svg",
-        title: "Pintura",
-        category: "Criatividade",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit",
-        url: "https://www.headspace.com/pt"
-    },
-    {
-        img: "https://image.flaticon.com/icons/svg/2729/2729021.svg",
-        title: "Video Games",
-        category: "Lazer",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit",
-        url: "https://store.steampowered.com/?l=portuguese"
-    },
-]
 
 // configurar arquivos estáticos pelo express
 server.use(express.static("public"))
@@ -135,19 +87,22 @@ server.post("/", function(req, res) {
     //console.log(req.body)
 })
 
-server.delete("/", function(req, res) {
-    const title = req.body.title;
+server.get("/delete", function(req, res) {
+    const id = req.query.id;
 
-    db.run(`DELETE FROM ideias WHERE id = ?`, [id], function(error, rows) {
+    db.run(`DELETE FROM ideias WHERE id = ?`, id, function(error) {
         if(error) {
             console.log(error)
             return res.send("Erro no banco de dados!")
         }
-        console.log("DELETE IDEIA:\n", this)
+        console.log("DELETE IDEIA:\n", req.query.id)
     })
 
     return res.redirect("/ideias")
 })
+
+let port = process.env.PORT || 3000;
+
 
 // servidor ligado na porta 3000
 server.listen(port, function() {
