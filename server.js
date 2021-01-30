@@ -2,6 +2,8 @@ const express = require('express')      // express para criar e configurar meu s
 const server = express();
 // console.log(server)
 
+let port = process.env.PORT || 3000;
+
 var publicDir = require('path').join(__dirname,'/public');
 server.use(express.static(publicDir));
 const db = require("./db")
@@ -148,4 +150,4 @@ server.delete("/", function(req, res) {
 })
 
 // servidor ligado na porta 3000
-server.listen($PORT)
+server.listen(port)
