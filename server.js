@@ -143,11 +143,13 @@ server.delete("/", function(req, res) {
             console.log(error)
             return res.send("Erro no banco de dados!")
         }
-        console.log("DELETEI IDEIA:\n", this)
+        console.log("DELETE IDEIA:\n", this)
     })
 
     return res.redirect("/ideias")
 })
 
 // servidor ligado na porta 3000
-server.listen(port)
+server.listen(port, function() {
+    console.log('Our app is running on http://localhost:' + port)
+});
